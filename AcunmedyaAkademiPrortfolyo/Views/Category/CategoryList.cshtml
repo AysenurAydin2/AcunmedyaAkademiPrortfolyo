@@ -1,0 +1,38 @@
+﻿
+@model List<AcunmedyaAkademiPrortfolyo.Models.Table_Category>
+
+@{
+    ViewBag.Title = "CategoryList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h3>Ayşenur Aydın</h3>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Kategori Id</th>
+        <th>Kategori Adı</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+       {
+       <tr>
+            <td>@item.Categoryıd</td>
+            <td>@item.CategoryName</td>
+            <td><a href="/Category/DeleteCategory/@item.Categoryıd" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Category/UpdateCategory/@item.Categoryıd" class="btn btn-succes">Güncelle</a></td>
+       </tr>
+
+       }
+</table>
+<a href="/Category/CreateCategory/" class="btn btn-primary">Yeni Kategori Girişi</a>
+
+
+
+Birinci adım view menüsünden git changes sayfasına geliyoruz
+
+burada normalde bir projeyi githuba attıktan sonra yeni yaptığımız değişiklikler çıkıyor onları da gönderebiliyoruz
+
+ama bu sefer bizim projemiz hiç github da olmadığından yeni bir repository(yani github projesi oluşturacağız)
+

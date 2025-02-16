@@ -1,0 +1,57 @@
+﻿<header id="header" class="header d-flex flex-row justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+        <ul class="d-flex">
+            <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Ana Sayfa</span></a></li>
+            <li><a href="#about"><i class="bi bi-person navicon"></i><span>Hakkımda</span></a></li>
+            <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Eğitim Hayatım</span></a></li>
+            <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolyo</span></a></li>
+            <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Hizmetler</span></a></li>
+            <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Bana Yazın</span></a></li>
+        </ul>
+    </nav>
+</header>
+
+<style>
+    /* Menü Arka Planını Siyah Yap */
+    .navmenu {
+        padding: 20px 350px;
+        border-radius: 10px; /* Hafif yuvarlatılmış köşeler */
+    }
+
+    /* Flex ile Menü Öğelerini Yatayda Düzenle */
+    .d-flex {
+        display: flex; /* Flexbox düzeni */
+        flex-direction: row; /* Yatay hizalama */
+        padding: 0;
+        margin: 0;
+        list-style: none; /* Liste noktasını kaldır */
+    }
+
+    /* Menüdeki Tüm Linkleri Beyaz Yap */
+    .navmenu a {
+        color: white; /* Beyaz yazı rengi */
+        text-decoration: none; /* Alt çizgi olmasın */
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        transition: 0.3s; /* Yumuşak geçiş efekti */
+    }
+
+    /* Menü Öğeleri Arasında Boşluk Bırak */
+    .d-flex li {
+        margin-right: 20px; /* Öğeler arasına boşluk ekler */
+    }
+
+    /* Hover (Üzerine Gelince) Efekti */
+    .navmenu a:hover {
+        color: yellow; /* Sarı renk efekti */
+    }
+
+    /* Menü İçindeki İkonlar */
+    .navmenu i {
+        margin-right: 8px;
+        font-size: 20px;
+    }
+</style>
